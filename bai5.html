@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào</p>
+<input type="text" id="so">
+<button onclick="nhap()" >Nhập</button>
+<p id="kQ"></p>
+<script>
+    let a = parseInt(document.getElementById("so")).value;
+    let sum=0;
+    function nhap() {
+        for(let i=0; i<a;i++){
+            if(a%3==0){
+                sum+=a;
+            }
+        }
+        document.getElementById("kQ").innerHTML= sum;
+    }
+</script>
+</body>
+</html>

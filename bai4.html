@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập vào</p>
+<input type="text" id="so">
+<button onclick="nhap()" >Nhập</button>
+<p id="kQ"></p>
+<script>
+    let a = parseInt(document.getElementById("so")).value;
+    function nhap() {
+        if(a%2==0){
+            document.getElementById("kQ").innerHTML= "so do la so chan"+ a ;
+        }
+        else{
+            document.getElementById("kQ").innerHTML= "so do la so le" +a ;
+        }
+
+
+    }
+</script>
+</body>
+</html>
