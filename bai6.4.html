@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max cua mang</title>
+</head>
+<body>
+<p id="kQ"></p>
+<script>
+    let arr = [2, 3, 1,-13, 5, 7, 8, 4]
+    let max=0;
+    let index;
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]>max){
+            max= arr[i];
+            index=i;
+
+        }
+    }
+    document.getElementById("kQ").innerHTML = "Phan tu lon nhat trong mang:" + max +"vi tri: "+ index;
+</script>
+</body>
+</html>

@@ -10,15 +10,17 @@
 <button onclick="nhap()" >Nhập</button>
 <p id="kQ"></p>
 <script>
-    let a = parseInt(document.getElementById("so")).value;
-    let sum=0;
     function nhap() {
-        for(let i=0; i<a;i++){
+        let a = document.getElementById("so").value;
+        let sum=0;
+        for(let i=1; i<=a;i++){
             if(a%3==0){
-                sum+=a;
+                sum +=i;
             }
+            document.getElementById("kQ").innerHTML= sum;
+            //ts ra kq k dung?
         }
-        document.getElementById("kQ").innerHTML= sum;
+
     }
 </script>
 </body>

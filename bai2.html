@@ -10,11 +10,10 @@
 <button onclick="nhap()" >Nhập</button>
 <p id="kQ"></p>
 <script>
-    let a = parseInt(document.getElementById("so")).value;
     function nhap() {
+        let a = (document.getElementById("so")).value;
         let b = a*a;
-        document.getElementById("kQ").innerHTML= b ;
-
+        document.getElementById("kQ").innerHTML= "Bình phương của số đó là: "+b ;
     }
 </script>
 </body>

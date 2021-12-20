@@ -10,13 +10,13 @@
 <button onclick="nhap()" >Nhập</button>
 <p id="kQ"></p>
 <script>
-    let a = parseInt(document.getElementById("so")).value;
     function nhap() {
+        let a = (document.getElementById("so")).value;
         if(a%2==0){
-            document.getElementById("kQ").innerHTML= "so do la so chan"+ a ;
+            document.getElementById("kQ").innerHTML= "so do la so chan: "+ a ;
         }
         else{
-            document.getElementById("kQ").innerHTML= "so do la so le" +a ;
+            document.getElementById("kQ").innerHTML= "so do la so le: " +a ;
         }
 
 
